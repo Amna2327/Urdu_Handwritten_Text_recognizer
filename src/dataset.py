@@ -2,10 +2,11 @@ from torch.utils.data import Dataset
 from PIL import Image
 
 class my_Dataset(Dataset):
-    def __init__(self,label_path,word2Index,Index2word,dataset_path):
+    def __init__(self,label_path,word2Index,Index2word,dataset_path,transform):
         self.word2Index=word2Index
         self.Index2word=Index2word
         self.data=[]
+        self.transform=transform
 
         with open(label_path,encoding='utf-8') as file:
             for line in file:
@@ -24,15 +25,16 @@ class my_Dataset(Dataset):
         for char in label:
             int_labels.append(self.word2Index[char])
 
+        img=self.transform(img)
         return img,int_labels
     
 
-def Vocab_builder():
+def Vocab_builder(path):
 
     training_data_set=set()
  
     #set of unique chars in dataset
-    with open("data/DataSet/UHWR/train.txt",encoding='utf-8') as file:
+    with open(path,encoding='utf-8') as file:
       for line in file:
         l=line.strip()
         c=l.split('\t')
