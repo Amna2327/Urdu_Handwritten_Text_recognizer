@@ -1,5 +1,6 @@
 from torch.utils.data import Dataset
 from PIL import Image
+import torch
 
 class my_Dataset(Dataset):
     def __init__(self,label_path,word2Index,Index2word,dataset_path,transform):
@@ -49,4 +50,28 @@ def Vocab_builder(path):
         word2Index[char]=index
         Index2word[index]=char
     
+    orig_len=len(word2Index)
+    word2Index['<Pad>']=orig_len
+    Index2word[orig_len]='<Pad>'
     return word2Index,Index2word
+
+
+def collate_fn(batch,word2Index):
+    images, label_lists = zip(*batch)
+
+    image_batch = torch.stack(images)
+
+    label_lengths = [len(l) for l in label_lists]
+    max_len = max(label_lengths)
+
+    padded_labels = torch.full((len(label_lists), max_len), len(word2Index)-1, dtype=torch.long)
+    for i, label in enumerate(label_lists):
+        padded_labels[i, :len(label)] = torch.tensor(label, dtype=torch.long)
+
+    label_lengths = torch.tensor(label_lengths, dtype=torch.long)
+
+    return image_batch, padded_labels, label_lengths
+
+word2Index,Index2word=Vocab_builder("data/Dataset/UHWR/train.txt")
+print(len(word2Index))
+print(word2Index['<Pad>'])
