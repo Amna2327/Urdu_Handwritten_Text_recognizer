@@ -72,6 +72,3 @@ def collate_fn(batch,word2Index):
 
     return image_batch, padded_labels, label_lengths
 
-word2Index,Index2word=Vocab_builder("data/Dataset/UHWR/train.txt")
-print(len(word2Index))
-print(word2Index['<Pad>'])
