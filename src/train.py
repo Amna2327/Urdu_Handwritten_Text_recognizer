@@ -69,8 +69,8 @@ def main():
   for i in range(epochs):
      train_loss=train_one_epoch(model,train_loader,optimizer,criterion)
      val_loss=validate(model,val_loader,criterion)
-     print(f'epoch: {i+1}, loss={train_loss/len(train_loader):.4f}')
-     print(f'epoch: {i+1}, loss={val_loss/len(val_loader):.4f}')
+     print(f'epoch: {i+1}, train_loss={train_loss/len(train_loader):.4f}')
+     print(f'epoch: {i+1}, val_loss={val_loss/len(val_loader):.4f}')
      torch.save(model.state_dict(), f"checkpoints/epoch_{i+1}.pt")
 
 if __name__=="__main__":
