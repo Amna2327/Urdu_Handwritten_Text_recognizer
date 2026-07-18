@@ -22,6 +22,9 @@ def train_one_epoch(model,train_loader,optimizer,criterion):
       optimizer.step()
 
       train_loss+=loss.item()
+      if c%100==0:
+         print(f"Batch number: {c}, loss(per batch): {loss.item()}")
+
     return train_loss
 
 def validate(model,val_loader,criterion):
