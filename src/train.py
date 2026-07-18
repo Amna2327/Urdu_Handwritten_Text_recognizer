@@ -4,7 +4,7 @@ from dataset import my_Dataset,Vocab_builder,collate_fn
 from models.v1_CNN_BiLSTM import v1_Recognizer
 from transforms import transform
 
-def train_one_epoch(model,train_loader,optimizer,criterion):
+def train_one_epoch(model,train_loader,optimizer,criterion,device):
     model.train()
     train_loss=0
     c=0
@@ -12,10 +12,14 @@ def train_one_epoch(model,train_loader,optimizer,criterion):
       optimizer.zero_grad()
       c+=1
 
+      image_batch=image_batch.to(device)
+      labels=labels.to(device)
+
       log_probs=model(image_batch)
       log_probs=log_probs.transpose(0,1)
 
       input_length=torch.full((image_batch.size(0),),200,dtype=torch.long)
+      input_length=input_length.to(device)
 
       loss=criterion(log_probs,labels,input_length,label_lengths)
       loss.backward()
@@ -27,11 +31,13 @@ def train_one_epoch(model,train_loader,optimizer,criterion):
 
     return train_loss
 
-def validate(model,val_loader,criterion):
+def validate(model,val_loader,criterion,device):
   model.eval()
   total_loss=0
   for image_batch, labels, label_lengths in val_loader:
       with torch.no_grad():
+        image_batch=image_batch.to(device)
+        labels=labels.to(device)
         log_probs=model(image_batch)
         log_probs=log_probs.transpose(0,1)
         input_length=torch.full((image_batch.size(0),),200,dtype=torch.long)
@@ -65,10 +71,13 @@ def main():
   criterion=torch.nn.CTCLoss(blank=117)
   optimizer=torch.optim.Adam(model.parameters(), lr=0.0003)
 
+  device=torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+  model=model.to(device)
+
   epochs=5
   for i in range(epochs):
-     train_loss=train_one_epoch(model,train_loader,optimizer,criterion)
-     val_loss=validate(model,val_loader,criterion)
+     train_loss=train_one_epoch(model,train_loader,optimizer,criterion,device)
+     val_loss=validate(model,val_loader,criterion,device)
      print(f'epoch: {i+1}, train_loss={train_loss/len(train_loader):.4f}')
      print(f'epoch: {i+1}, val_loss={val_loss/len(val_loader):.4f}')
      torch.save(model.state_dict(), f"checkpoints/epoch_{i+1}.pt")
