@@ -74,7 +74,7 @@ def main():
   device=torch.device('cuda' if torch.cuda.is_available() else 'cpu')
   model=model.to(device)
 
-  epochs=5
+  epochs=10
   for i in range(epochs):
      train_loss=train_one_epoch(model,train_loader,optimizer,criterion,device)
      val_loss=validate(model,val_loader,criterion,device)
