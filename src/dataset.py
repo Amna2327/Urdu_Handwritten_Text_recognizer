@@ -1,6 +1,7 @@
 from torch.utils.data import Dataset
 from PIL import Image
 import torch
+import os
 
 class my_Dataset(Dataset):
     def __init__(self,label_path,word2Index,Index2word,dataset_path,transform):
@@ -10,11 +11,17 @@ class my_Dataset(Dataset):
         self.transform=transform
 
         with open(label_path,encoding='utf-8') as file:
+            skipped=0
             for line in file:
                 cleaned_line=line.strip()
                 words=cleaned_line.split('\t')
-                self.data.append((dataset_path+words[0],words[1]))
-
+                full_path=dataset_path+words[0]
+                if os.path.exists(full_path):
+                   self.data.append((full_path,words[1]))
+                else:
+                    skipped+=1
+            print(f'Skipped files due to incorrect path: {skipped}')
+            
     def __len__(self):
         return len(self.data)
 
