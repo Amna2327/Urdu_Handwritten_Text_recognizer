@@ -65,7 +65,7 @@ def main():
   criterion=torch.nn.CTCLoss(blank=117)
   optimizer=torch.optim.Adam(model.parameters(), lr=0.0003)
 
-  epochs=1
+  epochs=5
   for i in range(epochs):
      train_loss=train_one_epoch(model,train_loader,optimizer,criterion)
      val_loss=validate(model,val_loader,criterion)
