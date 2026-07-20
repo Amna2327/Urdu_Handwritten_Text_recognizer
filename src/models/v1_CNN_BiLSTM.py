@@ -65,7 +65,7 @@ class v1_Recognizer(nn.Module):
         super().__init__()
         self.CNN_Encoder=CNN_Encoder()
         self.BiLSTM=nn.LSTM(input_size=256,hidden_size=256,batch_first=True,bidirectional=True,num_layers=1)
-        self.Dropout=nn.Dropout(rate=0.3)
+        self.Dropout=nn.Dropout(0.3)
         self.output_layer=nn.Linear(512,118)
     
 
