@@ -65,6 +65,7 @@ class v1_Recognizer(nn.Module):
         super().__init__()
         self.CNN_Encoder=CNN_Encoder()
         self.BiLSTM=nn.LSTM(input_size=256,hidden_size=256,batch_first=True,bidirectional=True,num_layers=1)
+        self.Dropout=nn.Dropout(rate=0.3)
         self.output_layer=nn.Linear(512,118)
     
 
@@ -73,7 +74,8 @@ class v1_Recognizer(nn.Module):
         x=x.squeeze(2)
         x=x.transpose(1,2)
         per_timestep_output,NONE=self.BiLSTM(x)
-        logits = self.output_layer(per_timestep_output)
+        LSTM_output=self.Dropout(per_timestep_output)
+        logits = self.output_layer(LSTM_output)
         log_probs=nn.functional.log_softmax(logits,dim=2)
         return log_probs
     
