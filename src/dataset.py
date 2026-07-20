@@ -11,16 +11,21 @@ class my_Dataset(Dataset):
         self.transform=transform
 
         with open(label_path,encoding='utf-8') as file:
-            skipped=0
+            skipped_incoPath=0
+            skipped_widTooBig=0
             for line in file:
                 cleaned_line=line.strip()
                 words=cleaned_line.split('\t')
                 full_path=dataset_path+words[0]
                 if os.path.exists(full_path):
-                   self.data.append((full_path,words[1]))
+                    if Image.open(full_path).size[0]<=1400:  
+                      self.data.append((full_path,words[1]))
+                    else:
+                       skipped_widTooBig+=1
                 else:
-                    skipped+=1
-            print(f'Skipped files due to incorrect path: {skipped}')
+                     skipped_incoPath+=1
+            print(f'Skipped files due to incorrect path: { skipped_incoPath}')
+            print(f'Skipped files due to incorrect path: { skipped_widTooBig}')
             
     def __len__(self):
         return len(self.data)
