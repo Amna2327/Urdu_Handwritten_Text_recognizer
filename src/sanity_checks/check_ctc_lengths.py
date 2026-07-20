@@ -18,7 +18,7 @@ def num_adjacent_repeats(label_str):
 def main():
     word2Index, Index2word = Vocab_builder("data/DataSet/UHWR/train.txt")
     dataset = my_Dataset(
-        label_path="data/DataSet/UHWR/overfit_test.txt",
+        label_path="data/DataSet/UHWR/train.txt",
         word2Index=word2Index,
         Index2word=Index2word,
         dataset_path="data/DataSet/UHWR/",

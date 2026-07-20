@@ -10,18 +10,18 @@ from transforms import transform
 word2Index, Index2word = Vocab_builder("data/DataSet/UHWR/train.txt")
 
 val_Dataset = my_Dataset(
-    label_path="data/DataSet/UHWR/overfit_test.txt",
+    label_path="data/DataSet/UHWR/val.txt",
     word2Index=word2Index,
     Index2word=Index2word,
     dataset_path="data/DataSet/UHWR/",
     transform=transform
 )
 
-image, label, real_width = val_Dataset[0]
+image, label, real_width = val_Dataset[34]
 image = image.unsqueeze(0)
 
 model = v1_Recognizer()
-model.load_state_dict(torch.load("checkpoints/overfit_test/epoch_411.pt", map_location='cpu'))
+model.load_state_dict(torch.load("checkpoints/best_model_with_Dropout.pt", map_location='cpu'))
 model.eval()
 
 with torch.no_grad():
