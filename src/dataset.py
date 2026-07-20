@@ -32,14 +32,14 @@ class my_Dataset(Dataset):
 
     def __getitem__(self,idx):
         (image_path,label)=self.data[idx]
-
+        label=label[::-1]
         img=Image.open(image_path)
         int_labels=[]
         for char in label:
             int_labels.append(self.word2Index[char])
 
-        img=self.transform(img)
-        return img,int_labels
+        img,real_width=self.transform(img)
+        return img,int_labels,real_width
     
 
 def Vocab_builder(path):
@@ -69,7 +69,7 @@ def Vocab_builder(path):
 
 
 def collate_fn(batch,word2Index):
-    images, label_lists = zip(*batch)
+    images, label_lists,real_widths = zip(*batch)
 
     image_batch = torch.stack(images)
 
@@ -81,6 +81,7 @@ def collate_fn(batch,word2Index):
         padded_labels[i, :len(label)] = torch.tensor(label, dtype=torch.long)
 
     label_lengths = torch.tensor(label_lengths, dtype=torch.long)
+    input_lengths = torch.tensor(real_widths, dtype=torch.long)
 
-    return image_batch, padded_labels, label_lengths
+    return image_batch, padded_labels, label_lengths,input_lengths
 
