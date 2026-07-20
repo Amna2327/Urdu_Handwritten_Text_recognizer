@@ -88,7 +88,7 @@ def main():
      #scheduler reduces LR if val_loss stalls
      scheduler.step(avg_val_loss)
 
-     print(f'epoch: {i+1}, train_loss={avg_train_loss/len(train_loader):.4f}, val_loss={avg_val_loss/len(val_loader):.4f}')
+     print(f'epoch: {i+1}, train_loss= {avg_train_loss:.4f}, val_loss= {avg_val_loss:.4f}')
     
     #early_stopping
      if avg_val_loss < best_val_loss:
