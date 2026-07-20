@@ -77,7 +77,7 @@ def main():
   epochs=100
   best_val_loss=float('inf')
   patience_counter=0
-  early_stop_patience=5
+  early_stop_patience=8
 
   for i in range(epochs):
      train_loss=train_one_epoch(model,train_loader,optimizer,criterion,device)
