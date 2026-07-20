@@ -26,36 +26,46 @@ class CNN_Encoder(nn.Module):
         self.MaxPool2d_dimhalf=nn.MaxPool2d((2,2))
         self.MaxPool2d_heighthalf=nn.MaxPool2d((2,1))
 
+        self.Dropout_01=nn.Dropout2d(0.1)
+        self.Dropout_02=nn.Dropout2d(0.2)
+
+    
     def forward(self,x):
         x=self.ConvLayer1(x)
         x=self.BatchNorm1(x)
         x=self.LeakyRelU(x)
         x=self.MaxPool2d_dimhalf(x)
+        x=self.Dropout_01(x)
 
         x=self.ConvLayer2(x)
         x=self.BatchNorm2(x)
         x=self.LeakyRelU(x)
         x=self.MaxPool2d_dimhalf(x)
+        x=self.Dropout_01(x)
 
         x=self.ConvLayer3(x)
         x=self.BatchNorm3(x)
         x=self.LeakyRelU(x)
         x=self.MaxPool2d_dimhalf(x)
+        x=self.Dropout_01(x)
 
         x=self.ConvLayer4(x)
         x=self.BatchNorm4(x)
         x=self.LeakyRelU(x)
         x=self.MaxPool2d_heighthalf(x)
+        x=self.Dropout_02(x)
 
         x=self.ConvLayer5(x)
         x=self.BatchNorm5(x)
         x=self.LeakyRelU(x)
         x=self.MaxPool2d_heighthalf(x)
+        x=self.Dropout_02(x)
 
         x=self.ConvLayer6(x)
         x=self.BatchNorm6(x)
         x=self.LeakyRelU(x)
         x=self.MaxPool2d_heighthalf(x)
+        x=self.Dropout_02(x)
 
         return x
 
