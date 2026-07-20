@@ -70,7 +70,7 @@ def main():
 
   model=v1_Recognizer()
   criterion=torch.nn.CTCLoss(blank=117)
-  optimizer=torch.optim.Adam(model.parameters(), lr=0.0003)
+  optimizer=torch.optim.Adam(model.parameters(), lr=0.0001)
 
   device=torch.device('cuda' if torch.cuda.is_available() else 'cpu')
   model=model.to(device)
