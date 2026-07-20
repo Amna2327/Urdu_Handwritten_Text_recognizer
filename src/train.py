@@ -101,7 +101,6 @@ def main():
         if patience_counter>=early_stop_patience:
            print(f'Early stopping at epoch {i+1}')
            break
-     torch.save(model.state_dict(), f"checkpoints/epoch_{i+1}.pt")
 
 if __name__=="__main__":
    main()
