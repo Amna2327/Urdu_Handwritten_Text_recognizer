@@ -25,7 +25,7 @@ class my_Dataset(Dataset):
                 else:
                      skipped_incoPath+=1
             print(f'Skipped files due to incorrect path: { skipped_incoPath}')
-            print(f'Skipped files due to incorrect path: { skipped_widTooBig}')
+            print(f'Skipped files due to  width>1400: { skipped_widTooBig}')
             
     def __len__(self):
         return len(self.data)

@@ -18,7 +18,7 @@ def train_one_epoch(model,train_loader,optimizer,criterion,device):
       log_probs=model(image_batch)
       log_probs=log_probs.transpose(0,1)
 
-      input_length=torch.full((image_batch.size(0),),200,dtype=torch.long)
+      input_length=torch.full((image_batch.size(0),),175,dtype=torch.long)
       input_length=input_length.to(device)
 
       loss=criterion(log_probs,labels,input_length,label_lengths)
@@ -41,7 +41,7 @@ def validate(model,val_loader,criterion,device):
         labels=labels.to(device)
         log_probs=model(image_batch)
         log_probs=log_probs.transpose(0,1)
-        input_length=torch.full((image_batch.size(0),),200,dtype=torch.long)
+        input_length=torch.full((image_batch.size(0),),175,dtype=torch.long)
         loss=criterion(log_probs,labels,input_length,label_lengths)
         total_loss+=loss.item()
   return total_loss
