@@ -18,6 +18,6 @@ ds = my_Dataset(
 
 # Save 5 augmented versions of the same sample to eyeball
 for i in range(5):
-    img_tensor, label, real_width = ds[0]
+    img_tensor, label, real_width = ds[1]
     img = TF.to_pil_image(img_tensor)
     img.save(f"aug_sample_{i}.png")
