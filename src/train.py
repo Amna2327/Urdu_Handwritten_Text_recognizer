@@ -66,7 +66,7 @@ def main():
   #allows parallelization, CPU augments while GPU runs on the previous batch
   train_loader = DataLoader(train_Dataset, batch_size=16, shuffle=True,
                            collate_fn=lambda b: collate_fn(b, word2Index),
-                           num_workers=4, pin_memory=True)
+                           num_workers=2, pin_memory=True)
   val_loader=DataLoader(val_Dataset,batch_size=16,shuffle=True,collate_fn=lambda b: collate_fn(b,word2Index))
 
   model=v1_Recognizer()
