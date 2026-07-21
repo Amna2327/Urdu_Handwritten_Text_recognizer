@@ -1,6 +1,6 @@
 import torch
 from torch.utils.data import DataLoader
-from torch.cuda.amp import autocast, GradScaler
+from torch.amp import autocast, GradScaler
 from dataset import my_Dataset, Vocab_builder, collate_fn
 from models.v1_CNN_BiLSTM import v1_Recognizer
 from transforms import transform, train_transform
@@ -18,7 +18,7 @@ def train_one_epoch(model, train_loader, optimizer, criterion, device, scaler):
         labels = labels.to(device)
         input_length = input_length.to(device)
 
-        with autocast():
+        with autocast('cuda'):
             log_probs = model(image_batch)
             log_probs = log_probs.transpose(0, 1)
             # CTC loss kept in float32 for numerical stability even inside autocast
@@ -46,7 +46,7 @@ def validate(model, val_loader, criterion, device):
             labels = labels.to(device)
             input_length = input_length.to(device)
 
-            with autocast():
+            with autocast('cuda'):
                 log_probs = model(image_batch)
                 log_probs = log_probs.transpose(0, 1)
                 loss = criterion(log_probs.float(), labels, input_length, label_lengths)
@@ -95,7 +95,7 @@ def main():
     criterion = torch.nn.CTCLoss(blank=117, zero_infinity=True)
     optimizer = torch.optim.Adam(model.parameters(), lr=0.0003)
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', factor=0.5, patience=3)
-    scaler = GradScaler()
+    scaler = GradScaler('cuda')
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     model = model.to(device)
