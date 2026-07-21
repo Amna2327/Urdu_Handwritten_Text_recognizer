@@ -2,7 +2,7 @@ import torch
 from torch.utils.data import DataLoader
 from dataset import my_Dataset,Vocab_builder,collate_fn
 from models.v1_CNN_BiLSTM import v1_Recognizer
-from transforms import transform
+from transforms import transform,train_transform
 
 def train_one_epoch(model,train_loader,optimizer,criterion,device):
     model.train()
@@ -52,7 +52,7 @@ def main():
    word2Index=word2Index,
    Index2word=Index2word,
    dataset_path="data/DataSet/UHWR/",
-   transform=transform
+   transform=train_transform
    )
 
   val_Dataset=my_Dataset(
@@ -94,7 +94,7 @@ def main():
      if avg_val_loss < best_val_loss:
         best_val_loss=avg_val_loss
         patience_counter=0
-        torch.save(model.state_dict(), "checkpoints/best_model_3layer_BiLSTM.pt")
+        torch.save(model.state_dict(), "checkpoints/best_model_3layer_BiLSTM_augmented.pt")
         print(f'  -> new best val_loss, saved checkpoint')
      else:
         patience_counter+=1

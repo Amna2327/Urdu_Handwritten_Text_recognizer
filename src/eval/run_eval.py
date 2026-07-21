@@ -5,7 +5,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..'))  # adjust if need
 
 import torch
 from models.v1_CNN_BiLSTM import v1_Recognizer
-from eval.eval import evaluate_cer
+from eval import evaluate_cer
 from dataset import my_Dataset, Vocab_builder, collate_fn
 from transforms import transform
 from torch.utils.data import DataLoader
@@ -24,7 +24,7 @@ def main():
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     model = v1_Recognizer()
-    model.load_state_dict(torch.load("checkpoints/best_model_with_Dropout.pt", map_location=device))
+    model.load_state_dict(torch.load("checkpoints/best_model_3layer_BiLSTM.pt", map_location=device))
     model.to(device)
 
     overall_cer, preds, refs = evaluate_cer(model, val_loader, Index2word, device, method="beam", beam_width=10)
