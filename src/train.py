@@ -94,7 +94,7 @@ def main():
      if avg_val_loss < best_val_loss:
         best_val_loss=avg_val_loss
         patience_counter=0
-        torch.save(model.state_dict(), "checkpoints/best_model.pt")
+        torch.save(model.state_dict(), "checkpoints/best_model_3layer_BiLSTM.pt")
         print(f'  -> new best val_loss, saved checkpoint')
      else:
         patience_counter+=1
