@@ -1,0 +1,960 @@
+type,ref_char,pred_char,count
+substitution,ر,د,37
+substitution,ب,ی,32
+substitution,د,ر,32
+substitution,ن,ت,31
+substitution,ت,ن,31
+substitution,پ,ی,31
+substitution,ی,ہ,29
+substitution,ا, ,26
+substitution,ا,آ,25
+substitution, ,۔,24
+substitution,ہ,ی,23
+substitution,ر, ,23
+substitution,ب,پ,23
+substitution,۔, ,22
+substitution, ,ا,22
+substitution,.,۔,21
+substitution,ج,چ,19
+substitution,م,ح,19
+substitution,ف,ق,18
+substitution,د,و,17
+substitution,ع,م,16
+substitution, ,و,16
+substitution,گ,ک,15
+substitution,ی,پ,15
+substitution,و,ر,15
+substitution,ز,ر,15
+substitution, ,ر,14
+substitution,ب,ج,14
+substitution,ح,م,14
+substitution,ی,ب,14
+substitution,ا,ر,14
+substitution,ہ,م,13
+substitution,ہ,ر,13
+substitution,ئ,ی,13
+substitution,ف,خ,13
+substitution,', ,13
+substitution,پ,ب,12
+substitution,ہ,س,12
+substitution,ر,و,12
+substitution,ا,ل,12
+substitution,ر,ز,12
+substitution,ی,ے,12
+substitution,ب,ہ,12
+substitution,آ,ا,12
+substitution,ل,ر,12
+substitution,س,ی,11
+substitution,ہ,ب,11
+substitution,و,ی,11
+substitution,م,ہ,11
+substitution,ی,ئ,11
+substitution, ,ی,11
+substitution,ک,گ,11
+substitution,ئ,ت,11
+substitution,ص,م,11
+substitution,ی,ل,10
+substitution,م,س,10
+substitution,ے,ی,10
+substitution,ٹ,ت,10
+substitution,ق,ت,10
+substitution,پ,ہ,10
+substitution,،, ,10
+substitution,د, ,9
+substitution,ن,ش,9
+substitution,چ,ج,9
+substitution,م, ,9
+substitution,و,د,9
+substitution, ,،,9
+substitution,ن,ں,9
+substitution,ع,ص,9
+substitution,و, ,9
+substitution,خ,ح,9
+substitution,ہ,پ,8
+substitution,ب,م,8
+substitution,ر,ا,8
+substitution,ی, ,8
+substitution,ل,ا,8
+substitution,ق,ف,8
+substitution,م,ص,8
+substitution,د,ہ,8
+substitution,ل,ک,8
+substitution,ض,ف,8
+substitution,ل,ی,7
+substitution,س,ک,7
+substitution,ل,ہ,7
+substitution,(,ا,7
+substitution,',،,7
+substitution,ف,ن,7
+substitution,م,ل,7
+substitution,ی,س,7
+substitution,س,م,7
+substitution,ئ, ,7
+substitution,ٹ,ئ,7
+substitution,ٹ,ن,7
+substitution,ا,ی,7
+substitution,ل, ,7
+substitution,خ,ف,7
+substitution,ئ,ن,7
+substitution,ا,د,7
+substitution,ا,م,7
+substitution,س,ن,7
+substitution,ی,ھ,7
+substitution,ج,م,7
+substitution,ل,ﷲ,7
+substitution,ن,ف,7
+substitution,ن,ل,6
+substitution,ج,ح,6
+substitution,ن,ز,6
+substitution,ح,ج,6
+substitution,ش,ت,6
+substitution,ت,ق,6
+substitution,ہ,ھ,6
+substitution,ح,خ,6
+substitution,ی,م,6
+substitution, ,س,6
+substitution,ل,ں,6
+substitution,ت,ک,6
+substitution,ر,ہ,6
+substitution,م,ھ,6
+substitution,ن,ی,6
+substitution,ک, ,6
+substitution,"""",',6
+substitution,ض,ص,6
+substitution,ک,ل,6
+substitution,ل,و,6
+substitution,ی,ن,6
+substitution,م,ع,5
+substitution,ن,ب,5
+substitution,ن, ,5
+substitution,و,م,5
+substitution,ن,ہ,5
+substitution,ر,ڑ,5
+substitution,ص,ع,5
+substitution,ں,ن,5
+substitution,و,ھ,5
+substitution,ن,س,5
+substitution,ک,ی,5
+substitution,ب,ن,5
+substitution,آ,ک,5
+substitution,(, ,5
+substitution,ت,ر,5
+substitution,ئ,ٹ,5
+substitution,م,ج,5
+substitution,ھ,و,5
+substitution,،,۔,5
+substitution,ل,ن,5
+substitution,ب, ,5
+substitution,س,ں,5
+substitution,ا,و,5
+substitution,م,ک,5
+substitution,ش,ن,5
+substitution,م,و,5
+substitution, ,ن,5
+substitution,ھ,م,5
+substitution,ن,ر,5
+substitution,:,۔,5
+substitution,ڑ,ر,5
+substitution,ط,ل,5
+substitution,ر,ی,5
+substitution,ذ,د,5
+substitution,س,ت,5
+substitution,ق,خ,4
+substitution,ش,س,4
+substitution,ت,س,4
+substitution,ت, ,4
+substitution,ث,ت,4
+substitution,ب,س,4
+substitution,ز,ن,4
+substitution,ر,ل,4
+substitution,ے,ہ,4
+substitution,ل,د,4
+substitution,د,ل,4
+substitution,ہ,ن,4
+substitution,ئ,ل,4
+substitution, ,',4
+substitution,ک,س,4
+substitution,و,ل,4
+substitution,ئ,ک,4
+substitution,چ,م,4
+substitution,ک,ت,4
+substitution,خ,ج,4
+substitution,2,0,4
+substitution,ہ,ے,4
+substitution,م,ر,4
+substitution,ہ,ا,4
+substitution,ض,خ,4
+substitution,ے,ا,4
+substitution,8,0,4
+substitution,ن,ا,4
+substitution,"""", ,4
+substitution,ہ,د,4
+substitution,ت,م,4
+substitution,ا,ب,4
+substitution,ح,ص,4
+substitution, ,د,4
+substitution,گ, ,4
+substitution,ل,ع,4
+substitution,س,ب,4
+substitution,خ,م,4
+substitution, ,ہ,3
+substitution,ل,ٹ,3
+substitution,د,ا,3
+substitution,ج,ھ,3
+substitution,:, ,3
+substitution, ,ز,3
+substitution,ز, ,3
+substitution,ج,خ,3
+substitution,ٹ,ش,3
+substitution,ف,م,3
+substitution,ف,ع,3
+substitution,ع,ح,3
+substitution,غ,ع,3
+substitution,چ,پ,3
+substitution,ی,ں,3
+substitution,ن,پ,3
+substitution,5,ا,3
+substitution,م,ت,3
+substitution,ر,م,3
+substitution,ص,ں,3
+substitution,ئ,ؤ,3
+substitution,ا,ہ,3
+substitution,ٓ,آ,3
+substitution,ی,ر,3
+substitution,ت,ئ,3
+substitution,ض,م,3
+substitution,ر,ن,3
+substitution,خ,ض,3
+substitution,ذ,ز,3
+substitution,م,ا,3
+substitution,ں,ہ,3
+substitution,ش,ں,3
+substitution, ,ٹ,3
+substitution,ب,ل,3
+substitution,ف,ض,3
+substitution,1, ,3
+substitution, ,ل,3
+substitution,ذ,ا,3
+substitution,ح,چ,3
+substitution,ز,ذ,3
+substitution, ,ے,3
+substitution,م,ف,3
+substitution,ن,ئ,3
+substitution,ھ, ,3
+substitution,ع,و,3
+substitution,ل,م,3
+substitution,د,ں,3
+substitution,ف,ت,3
+substitution,ڑ,ٹ,3
+substitution,ہ,ج,3
+substitution,ا,س,3
+substitution,م,ی,3
+substitution,ت,ب,3
+substitution,غ,خ,3
+substitution,ت,ج,3
+substitution, ,ت,3
+substitution, ,ک,3
+substitution,ئ,گ,3
+substitution,ظ,ط,3
+substitution,ق,ع,3
+substitution,ج,ب,3
+substitution,ھ,ٹ,3
+substitution,ٹ,ل,3
+substitution,م,ض,3
+substitution,د,ڈ,3
+substitution, ,پ,3
+substitution,3,1,3
+substitution,پ, ,3
+substitution,(,ر,3
+substitution,ٹ,گ,3
+substitution,س,ا,3
+substitution,ق,ض,3
+substitution,1,5,3
+substitution,ہ, ,3
+substitution,ر,ڈ,3
+substitution, ,ئ,3
+substitution,ب,ع,3
+substitution,ﷲ,ل,3
+substitution,ت,ش,3
+substitution,ت,ی,3
+substitution,ی,ا,3
+substitution,2,ہ,3
+substitution,چ,ی,3
+substitution,., ,3
+substitution,ٹ,ی,3
+substitution,5,0,3
+substitution,ع,ھ,3
+substitution,), ,3
+substitution,ک,ا,3
+substitution,7,9,2
+substitution,ث,ش,2
+substitution,ع,د,2
+substitution,ع,ٹ,2
+substitution,ء,و,2
+substitution,ب,ا,2
+substitution,ع,ب,2
+substitution,د,ح,2
+substitution,۳,س,2
+substitution,1,2,2
+substitution,ن,خ,2
+substitution,ی,ع,2
+substitution, ,م,2
+substitution,7,1,2
+substitution,و,ف,2
+substitution,و,ط,2
+substitution,ے,س,2
+substitution,ل,پ,2
+substitution,ع, ,2
+substitution,ذ,ر,2
+substitution,م,ز,2
+substitution, ,ع,2
+substitution,ج,ن,2
+substitution,ہ,ص,2
+substitution,ھ,ج,2
+substitution,خ, ,2
+substitution,5,4,2
+substitution,ھ,پ,2
+substitution,۔,ی,2
+substitution,',ا,2
+substitution,غ,ن,2
+substitution,ی,و,2
+substitution,ٹ,ھ,2
+substitution,و,ؤ,2
+substitution,3,2,2
+substitution,",",۔,2
+substitution,غ,ض,2
+substitution,ص,ہ,2
+substitution,ط,ا,2
+substitution,ف,ز,2
+substitution,ا,ں,2
+substitution,ق,ھ,2
+substitution, ,ح,2
+substitution,7,4,2
+substitution,.,9,2
+substitution,4,1,2
+substitution,چ,ھ,2
+substitution,',ے,2
+substitution,ن,ک,2
+substitution,،,ہ,2
+substitution,ں,ا,2
+substitution,م,ے,2
+substitution,ٹ,ز,2
+substitution,ج,ی,2
+substitution,3,0,2
+substitution,7,3,2
+substitution,ڑ,ز,2
+substitution,ر,ک,2
+substitution,8,2,2
+substitution,م,د,2
+substitution,و,ا,2
+substitution,ڈ,ڑ,2
+substitution, ,5,2
+substitution,ل,س,2
+substitution,ٹ,ڑ,2
+substitution,ں,۔,2
+substitution,ل,ب,2
+substitution,خ,ذ,2
+substitution,ھ,چ,2
+substitution,ح, ,2
+substitution,م,۔,2
+substitution,ھ,ی,2
+substitution,ڈ,ٹ,2
+substitution,ئ,ر,2
+substitution,ؤ,و,2
+substitution,ڈ,ر,2
+substitution,ن,ٹ,2
+substitution,ل,ط,2
+substitution,ف, ,2
+substitution,ص,ق,2
+substitution,پ,ش,2
+substitution,ق,ص,2
+substitution,د,ز,2
+substitution,ھ,ر,2
+substitution,ک,پ,2
+substitution,ة,ہ,2
+substitution,ح,ک,2
+substitution,؟, ,2
+substitution, ,؟,2
+substitution,5,3,2
+substitution,غ,ت,2
+substitution,ت,پ,2
+substitution,1,ک,2
+substitution,ع,ف,2
+substitution,ع,ت,2
+substitution,ش,ع,2
+substitution,ط,ج,2
+substitution,ض,ن,2
+substitution,ئ,ہ,2
+substitution,ٹ,ع,2
+substitution,ئ,م,2
+substitution,س, ,2
+substitution,ر,ے,2
+substitution,ح,ہ,2
+substitution,چ, ,2
+substitution,ئ,س,2
+substitution, ,(,2
+substitution,س,ل,2
+substitution,ئ,ش,2
+substitution,چ,و,2
+substitution,0,1,2
+substitution,9,6,2
+substitution,ل,ح,2
+substitution,د,ذ,2
+substitution,ی,ک,2
+substitution,ز,ت,2
+substitution,ل,(,2
+substitution,۔,د,2
+substitution,ق,م,2
+substitution,،,',2
+substitution,ئ,ں,2
+substitution,ٹ,م,2
+substitution,ہ,ع,2
+substitution,ت,ں,2
+substitution,چ,۔,2
+substitution,ل,ئ,2
+substitution,ت,غ,2
+substitution,',"""",2
+substitution,ٹ, ,2
+substitution,پ,چ,2
+substitution,ط,م,2
+substitution,),،,2
+substitution,ڈ,ئ,2
+substitution,ط,ی,2
+substitution,.,4,2
+substitution,ی,ح,2
+substitution,پ,ت,2
+substitution,ٹ,ر,2
+substitution,3, ,2
+substitution,ت,ز,2
+substitution,ا,ک,2
+substitution,س,ہ,2
+substitution,ص,ض,2
+substitution,ر,ں,2
+substitution,ز,ک,2
+substitution,م,ن,2
+substitution,),م,2
+substitution,4, ,2
+substitution,ط, ,1
+substitution,ث,د,1
+substitution,د,پ,1
+substitution,ک,ط,1
+substitution,),ش,1
+substitution,ہ,گ,1
+substitution,گ,ی,1
+substitution,?,؟,1
+substitution,ی,۔,1
+substitution, ,"""",1
+substitution,ف,و,1
+substitution,ا,ن,1
+substitution,۲,!,1
+substitution,ب,ت,1
+substitution,ڈ,د,1
+substitution,ڈ,ز,1
+substitution,د,س,1
+substitution,ک,و,1
+substitution,ع,ج,1
+substitution,پ,ن,1
+substitution,8, ,1
+substitution,1,3,1
+substitution,ق,ظ,1
+substitution,ا,پ,1
+substitution,1,ف,1
+substitution,2,8,1
+substitution,',پ,1
+substitution,گ,ا,1
+substitution,آ,پ,1
+substitution,س,گ,1
+substitution,ا,ٓ,1
+substitution,پ,آ,1
+substitution,چ,ز,1
+substitution,ر,ق,1
+substitution,ث,ٹ,1
+substitution,ک,ٹ,1
+substitution,ف,ل,1
+substitution,ک,ہ,1
+substitution,ھ,ہ,1
+substitution,و,ت,1
+substitution,ق,ح,1
+substitution,ں,ر,1
+substitution,ں, ,1
+substitution,),ا,1
+substitution,ت,ا,1
+substitution,۵,1,1
+substitution,۳,م,1
+substitution,۴,۳,1
+substitution,ب,چ,1
+substitution,ش,ف,1
+substitution,۔,',1
+substitution,ت,ے,1
+substitution,م,پ,1
+substitution,",",ھ,1
+substitution,",",ک,1
+substitution,",", ,1
+substitution,ق, ,1
+substitution,ج,ط,1
+substitution,!, ,1
+substitution,ؓ, ,1
+substitution, ,ؓ,1
+substitution,ی,چ,1
+substitution,ذ, ,1
+substitution,ٰ,ذ,1
+substitution,2,9,1
+substitution,م,چ,1
+substitution,ح,ر,1
+substitution,!,س,1
+substitution,ا,ظ,1
+substitution,ف,ج,1
+substitution,ض,ل,1
+substitution, ,ق,1
+substitution,،,ب,1
+substitution,ی,ط,1
+substitution,ڈ,ک,1
+substitution,ت,ہ,1
+substitution,ل,ز,1
+substitution,و,ج,1
+substitution,ح,ب,1
+substitution,ے,ں,1
+substitution,آ,ں,1
+substitution,ع,چ,1
+substitution,د,ص,1
+substitution,ح,ع,1
+substitution,3,ر,1
+substitution, ,6,1
+substitution,و,ڈ,1
+substitution,ا,گ,1
+substitution, ,ض,1
+substitution,ف,ک,1
+substitution,',۔,1
+substitution,',ں,1
+substitution,ے,و,1
+substitution,5,2,1
+substitution,ف,ی,1
+substitution,ی,ف,1
+substitution,م,ٓ,1
+substitution,ب,ص,1
+substitution,9,0,1
+substitution,6,2,1
+substitution,ق,ی,1
+substitution,ۓ,ئ,1
+substitution,ط,ء,1
+substitution,ھ,س,1
+substitution,أ,ا,1
+substitution,ِ,ر,1
+substitution,ر,پ,1
+substitution,ث,ہ,1
+substitution,ھ,ک,1
+substitution, ,ں,1
+substitution,ٹ,چ,1
+substitution,ع,ن,1
+substitution,۔,ں,1
+substitution,ق,ن,1
+substitution,ص, ,1
+substitution,چ,س,1
+substitution,ص,ح,1
+substitution,ع,غ,1
+substitution,7,0,1
+substitution,], ,1
+substitution,خ,ط,1
+substitution,ھ,ت,1
+substitution,ہ,،,1
+substitution,و,ن,1
+substitution, ,ص,1
+substitution,ا,ق,1
+substitution,ق,ش,1
+substitution,ء,ہ,1
+substitution,6,0,1
+substitution,گ,ئ,1
+substitution,س,ش,1
+substitution,و,ش,1
+substitution,گ,ل,1
+substitution,ر,ھ,1
+substitution,',د,1
+substitution,ے,ک,1
+substitution,ٰ,ی,1
+substitution,ظ,ف,1
+substitution,ت,ڈ,1
+substitution,6,ے,1
+substitution,0, ,1
+substitution,0,د,1
+substitution,2,ص,1
+substitution,1,ل,1
+substitution,ی,غ,1
+substitution,ٓ,ے,1
+substitution,۔,پ,1
+substitution,س,ص,1
+substitution,غ,ح,1
+substitution,ف,د,1
+substitution,ھ,ف,1
+substitution,ج,ر,1
+substitution,ں,ل,1
+substitution,ﷺ,و,1
+substitution,ں,ش,1
+substitution,ژ,ر,1
+substitution,پ,ج,1
+substitution,م,ئ,1
+substitution,4,0,1
+substitution,:,ے,1
+substitution,2, ,1
+substitution,ف,ے,1
+substitution,پ,د,1
+substitution,ہ,ط,1
+substitution,ح,ض,1
+substitution,ز,و,1
+substitution,و,ہ,1
+substitution,ن,آ,1
+substitution,ہ,ت,1
+substitution,ژ,ز,1
+substitution,ی,د,1
+substitution,ی,ٹ,1
+substitution,ع,پ,1
+substitution, ,:,1
+substitution,چ,خ,1
+substitution,ع,ک,1
+substitution,"""",و,1
+substitution,ج,د,1
+substitution,گ,ٹ,1
+substitution,ن,',1
+substitution,ل,ت,1
+substitution, ,گ,1
+substitution,ٹ,ث,1
+substitution,7, ,1
+substitution,4,9,1
+substitution,2,ئ,1
+substitution,ٓ,ئ,1
+substitution,ر,خ,1
+substitution,ک,ر,1
+substitution,ی,گ,1
+substitution, ,آ,1
+substitution,4,ع,1
+substitution,1,0,1
+substitution,ق,ط,1
+substitution,۔,،,1
+substitution,ذ,ڈ,1
+substitution,6,،,1
+substitution,6,؟,1
+substitution,8,ہ,1
+substitution,ی,ت,1
+substitution,،,ش,1
+substitution,ف,ص,1
+substitution,6,۳,1
+substitution,چ,ن,1
+substitution,1,ڈ,1
+substitution,ت,ف,1
+substitution,ً,گ,1
+substitution,و,ض,1
+substitution,ہ,ڈ,1
+substitution,ش,ٹ,1
+substitution,',ل,1
+substitution,و,ز,1
+substitution,ہ,چ,1
+substitution,ح,ڈ,1
+substitution,خ,ق,1
+substitution,چ,ل,1
+substitution,د,(,1
+substitution,م,ق,1
+substitution,؟,ب,1
+substitution,د,ب,1
+substitution,ط,د,1
+substitution,ں,د,1
+substitution,ﷺ,ر,1
+substitution, ,ب,1
+substitution,ب,ر,1
+substitution,ذ,و,1
+substitution,.,ہ,1
+substitution,ج,و,1
+substitution,خ,چ,1
+substitution,.,7,1
+substitution,6,4,1
+substitution,1,ا,1
+substitution,ک,خ,1
+substitution,ک,۔,1
+substitution,ب,گ,1
+substitution,ڑ,ی,1
+substitution,ب,ق,1
+substitution,ں,ب,1
+substitution,ا,:,1
+substitution,ن,گ,1
+substitution,',ٹ,1
+substitution,',ت,1
+substitution,م,ش,1
+substitution,ۃ,ق,1
+substitution,ٰ,ا,1
+substitution,ا,ش,1
+substitution,ش,م,1
+substitution,ز,ے,1
+substitution,ع,س,1
+substitution,۴,4,1
+substitution,۶,4,1
+substitution,ب,ں,1
+substitution,۴,9,1
+substitution,۹,9,1
+substitution,۱,1,1
+substitution,ص,ن,1
+substitution,ش,ر,1
+substitution,ن,ڈ,1
+substitution,ہ,؟,1
+substitution,د,ن,1
+substitution,آ, ,1
+substitution,ت,ث,1
+substitution,ب,ک,1
+substitution,غ,ف,1
+substitution,3,5,1
+substitution,ض,',1
+substitution,ر,',1
+substitution,ک,ھ,1
+substitution,8,1,1
+substitution, ,1,1
+substitution,1,4,1
+substitution,ھ,ق,1
+substitution,و,غ,1
+substitution,م,),1
+substitution,0,6,1
+substitution,ص,ا,1
+substitution,آ,ھ,1
+substitution,ش,ص,1
+substitution,ر,ع,1
+substitution,ر,ب,1
+substitution,د,ھ,1
+substitution,و,س,1
+substitution,ع,ض,1
+substitution,0,2,1
+substitution,7,۔,1
+substitution,س,و,1
+substitution,ٹ,ف,1
+substitution,غ, ,1
+substitution,.,س,1
+substitution,ز,د,1
+substitution,1,ہ,1
+substitution,س,ث,1
+substitution,؛,',1
+substitution,ی,!,1
+substitution,ن,د,1
+substitution,ب,د,1
+substitution,و,ب,1
+substitution,ہ,ف,1
+substitution,!,ا,1
+substitution,ً,ا,1
+substitution,ا,ت,1
+substitution,خ,ن,1
+substitution,ج, ,1
+substitution,1,7,1
+substitution,ض,و,1
+substitution,8,7,1
+substitution,6,ک,1
+substitution,پ,س,1
+substitution,ک,ن,1
+substitution,ئ,ا,1
+substitution,ی,خ,1
+substitution,آ,ت,1
+substitution,د,گ,1
+substitution,ہ,ک,1
+substitution,ا,،,1
+substitution,آ,ب,1
+substitution,ع,ق,1
+substitution,ہ,و,1
+substitution,1,.,1
+substitution,ذ,ن,1
+substitution,/, ,1
+substitution,ط,پ,1
+substitution,ﷺ,ص,1
+substitution,ا,"""",1
+substitution,ژ,ٹ,1
+substitution,ے,گ,1
+substitution,چ,ہ,1
+substitution,م,خ,1
+substitution,ش,ئ,1
+substitution,ح,ل,1
+substitution,ص,ر,1
+substitution,ئ,ق,1
+substitution,ز,ں,1
+substitution,ر,ج,1
+substitution,س,ے,1
+substitution,ا,ج,1
+substitution,ت,ل,1
+substitution,ع,خ,1
+substitution,ک,ف,1
+substitution,ک,د,1
+substitution,ا,ح,1
+substitution,ج,ا,1
+substitution,۔,س,1
+substitution,چ,غ,1
+substitution,پ,ل,1
+substitution,ئ,ث,1
+substitution,ڈ,ا,1
+substitution,ٓ,ض,1
+substitution,',م,1
+substitution,ث,ئ,1
+substitution,ث,ل,1
+substitution,ط,ظ,1
+substitution, ,ھ,1
+substitution,ّ,ت,1
+substitution,ِ,ی,1
+substitution,ط,ک,1
+substitution,خ,ت,1
+substitution,ک,ع,1
+substitution,ر,چ,1
+substitution,),ن,1
+substitution,(,و,1
+substitution,ل,ڈ,1
+substitution,-,۔,1
+substitution,ؤ,ت,1
+substitution,9,5,1
+substitution,5,1,1
+substitution,ئ,ڑ,1
+substitution,/,0,1
+substitution,2,1,1
+substitution,م,ب,1
+substitution,و,ح,1
+substitution,ﺅ,ؤ,1
+substitution,3,د,1
+substitution,ل,ھ,1
+substitution,ڑ,ڈ,1
+substitution,ح,د,1
+substitution,ز,ڑ,1
+substitution,.,2,1
+substitution,خ,ر,1
+substitution, ,ج,1
+substitution,ﺅ,و,1
+substitution,د,ج,1
+substitution,ل,ظ,1
+substitution,غ,د,1
+substitution,ش, ,1
+substitution,ھ,ا,1
+substitution,ز,ق,1
+substitution,س,د,1
+substitution,ع,ل,1
+substitution,ن,ھ,1
+substitution,ئ,و,1
+substitution,ح,ظ,1
+substitution,ت,ٹ,1
+substitution,ٹ,ڈ,1
+substitution,ڈ,پ,1
+substitution,۴,؟,1
+substitution,ظ,۔,1
+substitution,ت,۔,1
+substitution,ن,۔,1
+deletion, ,,539
+deletion,ی,,172
+deletion,ا,,135
+deletion,ل,,133
+deletion,ر,,130
+deletion,م,,130
+deletion,ہ,,113
+deletion,ن,,113
+deletion,س,,82
+deletion,',,78
+deletion,۔,,75
+deletion,ب,,73
+deletion,ت,,68
+deletion,و,,68
+deletion,ک,,67
+deletion,ے,,61
+deletion,د,,60
+deletion,ھ,,49
+deletion,ئ,,41
+deletion,ں,,38
+deletion,.,,36
+deletion,،,,33
+deletion,ع,,32
+deletion,پ,,31
+deletion,ح,,29
+deletion,ش,,26
+deletion,ج,,25
+deletion,ف,,24
+deletion,ٹ,,23
+deletion,ق,,22
+deletion,ٓ,,21
+deletion,چ,,14
+deletion,گ,,12
+deletion,خ,,11
+deletion,آ,,10
+deletion,ص,,9
+deletion,1,,8
+deletion,),,8
+deletion,ز,,7
+deletion,(,,7
+deletion,ِ,,7
+deletion,7,,6
+deletion,8,,6
+deletion,ء,,6
+deletion,0,,5
+deletion,ث,,5
+deletion,2,,5
+deletion,غ,,5
+deletion,"""",,4
+deletion,ٴ,,4
+deletion,5,,4
+deletion,ظ,,4
+deletion,ڈ,,4
+deletion,ض,,4
+deletion,-,,4
+deletion,ً,,3
+deletion,ٰ,,3
+deletion,ﷺ,,3
+deletion,ط,,3
+deletion,ُ,,3
+deletion,ڑ,,3
+deletion,6,,2
+deletion,۲,,2
+deletion,ؒ,,2
+deletion,4,,2
+deletion,:,,2
+deletion,۱,,1
+deletion,۶,,1
+deletion,",",,1
+deletion,ٔ,,1
+deletion,ؔ,,1
+deletion,/,,1
+deletion,ۂ,,1
+deletion,ؓ,,1
+deletion,۵,,1
+deletion,ّ,,1
+deletion,3,,1
+deletion,9,,1
+deletion,!,,1
+insertion,, ,327
+insertion,,ی,47
+insertion,,ا,40
+insertion,,ر,29
+insertion,,ن,25
+insertion,,ل,25
+insertion,,ہ,24
+insertion,,و,18
+insertion,,س,18
+insertion,,۔,18
+insertion,,م,17
+insertion,,ں,16
+insertion,,ت,15
+insertion,,ب,13
+insertion,,ک,13
+insertion,,ے,12
+insertion,,ئ,8
+insertion,,،,6
+insertion,,ٹ,6
+insertion,,پ,6
+insertion,,د,5
+insertion,,ٓ,5
+insertion,,ج,5
+insertion,,ش,5
+insertion,,ف,4
+insertion,,ع,4
+insertion,,ق,3
+insertion,,ھ,3
+insertion,,',3
+insertion,,گ,3
+insertion,,0,2
+insertion,,),2
+insertion,,ز,2
+insertion,,چ,2
+insertion,,ض,2
+insertion,,2,1
+insertion,,1,1
+insertion,,ء,1
+insertion,,ح,1
+insertion,,؟,1
+insertion,,ذ,1
+insertion,,آ,1
+insertion,,6,1
+insertion,,ص,1
+insertion,,4,1
+insertion,,خ,1

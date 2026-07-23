@@ -179,7 +179,7 @@ def main():
     print(f"Overall CER: {overall_cer:.4f}\n")
 
     report = build_confusion_report(refs, preds, top_n=30)
-    save_confusion_csv(report, path="confusion_matrix.csv")
+    save_confusion_csv(report, path="results/confusion_matrix.csv")
 
 
 if __name__ == "__main__":

@@ -24,13 +24,14 @@ def main():
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     model = v1_Recognizer()
-    model.load_state_dict(torch.load("checkpoints/best_model_3layer_BiLSTM.pt", map_location=device))
+    model.load_state_dict(torch.load("checkpoints/best_model_3layer_BiLSTM_augmented.pt", map_location=device))
     model.to(device)
 
-    overall_cer, preds, refs = evaluate_cer(model, val_loader, Index2word, device, method="beam", beam_width=10)
-    print(f"CER: {overall_cer:.4f}")
+    overall_cer, preds, refs= evaluate_cer(model, val_loader, Index2word, device, method="beam", beam_width=10)
+    print(f"CER with spacing: {overall_cer:.4f}")
     for p, r in zip(preds[:15], refs[:15]):
         print(f"pred: {p}\nref:  {r}\n")
+    
 
 if __name__ == "__main__":
     main()

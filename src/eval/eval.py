@@ -25,5 +25,5 @@ def evaluate_cer(model, val_loader, Index2word, device, blank=117, method="beam"
             for i, length in enumerate(label_lengths):
                 label_seq = labels[i, :length].tolist()
                 all_refs.append(''.join(Index2word[idx] for idx in label_seq))
-
+            
     return cer(all_refs, all_preds), all_preds, all_refs
